@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>3rd Quarter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="contain">
+            <div class="navbar">
+                <img src="multimedia/logo.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="index.htm">Home</a></li>
+                        <li><a href="quarter1.html">Quarter 1</a></li>
+                        <li><a href="quarter2.html">Quarter 2</a></li>
+                        <li><a href="quarter3.html">Quarter 3</a></li>
+                        <li><a href="quarter4.html">Quarter 4</a></li>
+                    </ul>
+                </nav>
+                <img src="multimedia/menu.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+            
+        <script>
+
+            var menuList = document.getElementById("menuList");
+    
+            menuList.style.maxHeight="0px"
+    
+            function togglemenu(){
+    
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+        </script>        
+    </body>
+</html>
