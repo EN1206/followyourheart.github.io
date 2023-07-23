@@ -53,7 +53,7 @@
         font-family: "Georgia", serif;
         font-weight: normal;
         padding: 15px;
-        color: #e2e2e2;
+        color: #ffffff;
         text-align: center;
         text-transform: capitalize;
     }
@@ -64,38 +64,38 @@
         justify-content: center;
         padding: 10px;
     }
-    .container .image-container .image{
-       height: 600x;
-       width: 350px;
+    .container .image-container .gallery{
+       height: 550px;
+       width: 360px;
        border: 10px solid #fff;
        box-shadow: 0 5px 15px rgba(0,0,0,.1);
        overflow: hidden;
        cursor: pointer;
     }
-    .container .image-container .image img{
+    .container .image-container .gallery img{
         height: 100%;
         width: 100%;
         object-fit: cover;
         transition: .2s linear;
     }
-    .container .image-container .image img:hover{
+    .container .image-container .gallery img:hover{
         transform: scale(1.1);
     }
-    .container .image-container .image-landscape{
-        height: 400px;
-        width: 546px;
+    .container .image-container .gallery-landscape{
+        height: 350px;
+        width: 539px;
         border: 10px solid #fff;
         box-shadow: 0 5px 15px rgba(0,0,0,.1);
         overflow: hidden;
         cursor: pointer;
      }
-     .container .image-container .image-landscape img{
+     .container .image-container .gallery-landscape img{
          height: 100%;
          width: 100%;
          object-fit: cover;
          transition: .2s linear;
      }
-     .container .image-container .image-landscape img:hover{
+     .container .image-container .gallery-landscape img:hover{
          transform: scale(1.1);
      }
     .container .popup-image{
@@ -122,13 +122,39 @@
         transform: translate(-50%, -50%);
         border: 5px solid #fff;
         border-radius: 5px;
-        width: 310px;
+        width: 800px;
         object-fit: cover;
     }
-
+    .container .popup-portrait{
+        position: fixed;
+        top: 0; left: 0;
+        background: rgba(0,0,0,.9);
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display: none;
+    }
+    .container .popup-portrait span{
+        position: absolute;
+        top: 0; right: 10px;
+        font-size: 60px;
+        font-weight: bolder;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .container .popup-portrait img{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid #fff;
+        border-radius: 5px;
+        width: 200px;
+        object-fit: cover;
+    }
     @media (max-width:768px){
         .container .popup-image img{
-            width: 90%;
+            width: 95%;
         }
     }
 

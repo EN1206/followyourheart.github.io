@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>2nd Quarter</title>
         <link rel="icon" href="multimedia/logo.png" sizes="32x32" type="image/png">
         <link rel="apple-touch-icon-precomposed" href="multimedia/logo.png" type="image/png" sizes="152x152">
         <link rel="apple-touch-icon-precomposed" href="multimedia/logo.png" type="image/png" sizes="120x120">
         <link rel="icon" href="multimedia/logo.png" sizes="96x96" type="image/png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
     </head>
-    <body>
+    <body style="background: #121212;">
         <div class="contain">
             <div class="navbar">
                 <img src="multimedia/logo.png" class="logo">
@@ -25,6 +26,57 @@
                 <img src="multimedia/menu.png" class="menu-icon" onclick="togglemenu()">
             </div>
             
+            <div class="container">
+
+                <h1>Random Selfies? 😆</h1>
+
+                <div class="image-container">
+                    <div class="image"><img src="multimedia/random2.jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/random2 (1).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/random2 (2).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/random2 (3).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/random2 (4).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/random2 (9).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/random2 (10).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/random2 (11).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/random2 (13).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/random2 (15).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/random2 (23).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (5).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (6).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (7).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (8).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (12).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (14).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (16).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (17).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (18).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (19).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (20).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (20).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (21).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/random2 (22).jpg" alt=""></div>
+                    <div class="popup-image">
+                        <span>&times;</span>
+                        <img src="multimedia/random2 (1).jpg" alt="">
+                        </div>
+                </div>
+            </div>
+
+            <script>
+
+                document.querySelectorAll('.image-container img').forEach(image=>{
+                    image.onclick = () =>{
+                        document.querySelector('.popup-image').style.display = 'block';
+                        document.querySelector('.popup-image img').src = image.getAttribute('src');
+            
+                    }
+                });
+            
+                document.querySelector('.popup-image span').onclick = () =>{
+                    document.querySelector('.popup-image').style.display = 'none';
+                }
+                </script>
         <script>
 
             var menuList = document.getElementById("menuList");

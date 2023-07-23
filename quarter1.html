@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>1st Quarter</title>
@@ -7,9 +7,9 @@
         <link rel="apple-touch-icon-precomposed" href="multimedia/logo.png" type="image/png" sizes="152x152">
         <link rel="apple-touch-icon-precomposed" href="multimedia/logo.png" type="image/png" sizes="120x120">
         <link rel="icon" href="multimedia/logo.png" sizes="96x96" type="image/png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style1.css">
     </head>
-    <body>
+    <body style="background: #121212;">
         <div class="contain">
             <div class="navbar">
                 <img src="multimedia/logo.png" class="logo">
@@ -25,6 +25,80 @@
                 <img src="multimedia/menu.png" class="menu-icon" onclick="togglemenu()">
             </div>
 
+            <div class="container">
+
+                <h1>Old Classroom Moments💙</h1>
+
+                <div class="image-container">
+                    <div class="image"><img src="multimedia/prandom1 (1).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (2).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (3).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (4).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (5).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (6).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (7).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (8).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (9).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (10).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (11).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (12).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (13).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (14).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (15).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (16).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (17).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (18).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (19).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (20).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (21).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (22).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (23).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (24).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (25).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (26).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (27).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (28).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (29).jpg" alt=""></div>
+                    <div class="image"><img src="multimedia/prandom1 (30).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (1).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (2).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (3).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (4).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (5).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (6).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (7).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (8).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (9).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (10).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (11).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (12).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (13).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (14).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (15).jpg" alt=""></div>
+                    <div class="image-landscape"><img src="multimedia/lrandom1 (16).jpg" alt=""></div>
+                    <div class="popup-image">
+                        <span>&times;</span>
+                        <img src="multimedia/prandom1 (1).jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <script>
+
+                document.querySelectorAll('.image-container img').forEach(image=>{
+                    image.onclick = () =>{
+                        document.querySelector('.popup-image').style.display = 'block';
+                        document.querySelector('.popup-image img').src = image.getAttribute('src');
+            
+                    }
+                });
+            
+                document.querySelector('.popup-image span').onclick = () =>{
+                    document.querySelector('.popup-image').style.display = 'none';
+                }
+                </script>
             <script>
 
                 var menuList = document.getElementById("menuList");
