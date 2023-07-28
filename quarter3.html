@@ -10,6 +10,7 @@
     <link rel="icon" href="multimedia/logo.png" sizes="96x96" type="image/png">
     <!-- custom css file link -->
     <link rel="stylesheet" href="style3.css">
+    <link rel='stylesheet' href="cdn.jsdelivr.net_npm_swiper@9_swiper-bundle.min.css">
 </head>
 <body style="background: #121212;">
     <div class="contain">
@@ -26,6 +27,58 @@
             </nav>
             <img src="multimedia/menu.png" class="menu-icon" onclick="togglemenu()">
         </div>
+
+        <div class="section-gallery">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide-1">
+                  <img src="multimedia/random3 (3).jpg">
+                </div>
+                <div class="swiper-slide slide-2">
+                  <img src="multimedia/random3 (12).jpg">
+                </div>
+                <div class="swiper-slide slide-3">
+                  <img src="multimedia/random3 (13).jpg">
+                </div>
+                <div class="swiper-slide slide-4">
+                  <img src="multimedia/random3 (14).jpg">
+                </div>
+                <div class="swiper-slide slide-5">
+                  <img src="multimedia/random3 (16).jpg">
+                </div>
+                <div class="swiper-slide slide-6">
+                  <img src="multimedia/random3 (17).jpg">
+                </div>
+                <div class="swiper-slide slide-7">
+                  <img src="multimedia/random3 (18).jpg">
+                </div>
+                <div class="swiper-slide slide-8">
+                  <img src="multimedia/random3 (19).jpg">
+                </div>
+                <div class="swiper-slide slide-9">
+                  <img src="multimedia/random3 (21).jpg">
+                </div>
+                <div class="swiper-slide slide-10">
+                  <img src="multimedia/random3 (23).jpg">
+                </div>
+                <div class="swiper-slide slide-11">
+                  <img src="multimedia/random3 (25).jpg">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+          <div class="swiper-modal-popup">
+            <div class="wrapper">
+              <span>&times;</span>
+              <img src="" alt="Image Modal">
+          
+              </div>
+            </div>
+          </div>
 
     <div class="container">
 
@@ -83,22 +136,11 @@
             <div class="image"><img src="multimedia/random3 (20).jpg" alt=""></div>
             <div class="image"><img src="multimedia/random3 (22).jpg" alt=""></div>
             <div class="image"><img src="multimedia/random3 (24).jpg" alt=""></div>
-            <div class="image-landscape"><img src="multimedia/random3 (3).jpg" alt=""></div>
-            <div class="image-landscape"><img src="multimedia/random3 (12).jpg" alt=""></div>
-            <div class="image-landscape"><img src="multimedia/random3 (13).jpg" alt=""></div>
-            <div class="image-landscape"><img src="multimedia/random3 (14).jpg" alt=""></div>
-            <div class="image-landscape"><img src="multimedia/random3 (16).jpg" alt=""></div>
-            <div class="image-landscape"><img src="multimedia/random3 (17).jpg" alt=""></div>
-            <div class="image-landscape"><img src="multimedia/random3 (18).jpg" alt=""></div>
-            <div class="image-landscape"><img src="multimedia/random3 (19).jpg" alt=""></div>
-            <div class="image-landscape"><img src="multimedia/random3 (21).jpg" alt=""></div>
-            <div class="image-landscape"><img src="multimedia/random3 (23).jpg" alt=""></div>
-            <div class="image-landscape"><img src="multimedia/random3 (25).jpg" alt=""></div>
         </div>
         </div>
 
         
-
+        <script src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js'></script><script  src="./script.js"></script>
     <script>
 
     document.querySelectorAll('.image-container img').forEach(image=>{
